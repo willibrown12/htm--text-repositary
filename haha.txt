@@ -1,0 +1,330 @@
+Microsoft Windows [Version 10.0.19045.4046]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Jbt\Desktop\html-test-repository>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\Jbt\Desktop\html-test-repository>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE09-C001
+
+ Directory of C:\Users\Jbt\Desktop\html-test-repository
+
+02/25/2024  07:44 PM    <DIR>          .
+02/25/2024  07:44 PM    <DIR>          ..
+02/25/2024  07:45 PM                45 index.html
+               1 File(s)             45 bytes
+               2 Dir(s)  67,571,580,928 bytes free
+
+C:\Users\Jbt\Desktop\html-test-repository>git init
+Initialized empty Git repository in C:/Users/Jbt/Desktop/html-test-repository/.git/
+
+C:\Users\Jbt\Desktop\html-test-repository>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE09-C001
+
+ Directory of C:\Users\Jbt\Desktop\html-test-repository
+
+02/25/2024  07:50 PM    <DIR>          .
+02/25/2024  07:50 PM    <DIR>          ..
+02/25/2024  07:45 PM                45 index.html
+               1 File(s)             45 bytes
+               2 Dir(s)  67,575,869,440 bytes free
+
+C:\Users\Jbt\Desktop\html-test-repository>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Jbt\Desktop\html-test-repository>git add index.html
+
+C:\Users\Jbt\Desktop\html-test-repository>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+C:\Users\Jbt\Desktop\html-test-repository>git commit-m this-is-my-first-commit
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+C:\Users\Jbt\Desktop\html-test-repository>git commit -m this-is-my-first-commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Jbt@SetH-04.(none)')
+
+C:\Users\Jbt\Desktop\html-test-repository> git config --global user.email viliking123@gmail.com
+
+C:\Users\Jbt\Desktop\html-test-repository> git config --global user.name willibrown12
+
+C:\Users\Jbt\Desktop\html-test-repository>git config --global user.name
+willibrown12
+
+C:\Users\Jbt\Desktop\html-test-repository>git commit-m this-is-my-first-commit
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+C:\Users\Jbt\Desktop\html-test-repository>git commit -m this-is-my-first-commit
+[master (root-commit) e3577a8] this-is-my-first-commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+
+C:\Users\Jbt\Desktop\html-test-repository>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Jbt\Desktop\html-test-repository>git-log
+'git-log' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Jbt\Desktop\html-test-repository>git log
+commit e3577a80df55fea2fcaf666f946e4d8e2a741f5b (HEAD -> master)
+Author: willibrown12 <viliking123@gmail.com>
+Date:   Sun Feb 25 20:09:50 2024 +0200
+
+    this-is-my-first-commit
+
+C:\Users\Jbt\Desktop\html-test-repository>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Jbt\Desktop\html-test-repository>git add index.html
+
+C:\Users\Jbt\Desktop\html-test-repository>git commit -m lalalala
+[master 53d76aa] lalalala
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+C:\Users\Jbt\Desktop\html-test-repository>git log
+commit 53d76aa0ccab4181b26b8aa8a68beb0486a0511a (HEAD -> master)
+Author: willibrown12 <viliking123@gmail.com>
+Date:   Sun Feb 25 20:17:32 2024 +0200
+
+    lalalala
+
+commit e3577a80df55fea2fcaf666f946e4d8e2a741f5b
+Author: willibrown12 <viliking123@gmail.com>
+Date:   Sun Feb 25 20:09:50 2024 +0200
+
+    this-is-my-first-commit
+
+C:\Users\Jbt\Desktop\html-test-repository>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Jbt\Desktop\html-test-repository>git add index.html
+
+C:\Users\Jbt\Desktop\html-test-repository>hit gommit -m jnfkhsdkjfhbkjdsfjksdjkjk
+'hit' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Jbt\Desktop\html-test-repository>git commit -m jskldjklasjdfkljsakljfklaSJ
+[master 63e6e7e] jskldjklasjdfkljsakljfklaSJ
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+C:\Users\Jbt\Desktop\html-test-repository>GIT LOG
+git: 'LOG' is not a git command. See 'git --help'.
+
+C:\Users\Jbt\Desktop\html-test-repository>git log
+commit 63e6e7e3cdfbf9e2e8064c787a988e750c5b23d5 (HEAD -> master)
+Author: willibrown12 <viliking123@gmail.com>
+Date:   Sun Feb 25 20:22:02 2024 +0200
+
+    jskldjklasjdfkljsakljfklaSJ
+
+commit 53d76aa0ccab4181b26b8aa8a68beb0486a0511a
+Author: willibrown12 <viliking123@gmail.com>
+Date:   Sun Feb 25 20:17:32 2024 +0200
+
+    lalalala
+
+commit e3577a80df55fea2fcaf666f946e4d8e2a741f5b
+Author: willibrown12 <viliking123@gmail.com>
+Date:   Sun Feb 25 20:09:50 2024 +0200
+
+    this-is-my-first-commit
+
+C:\Users\Jbt\Desktop\html-test-repository>git remote add origin https://github.com/willibrown12/htm--text-repositary
+
+C:\Users\Jbt\Desktop\html-test-repository>git branch -m main
+
+C:\Users\Jbt\Desktop\html-test-repository>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 812 bytes | 812.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/willibrown12/htm--text-repositary
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\Jbt\Desktop\html-test-repository>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Jbt\Desktop\html-test-repository>git add index.html
+
+C:\Users\Jbt\Desktop\html-test-repository>git commit -m this-is-my-first-commiczxczxczxczxc
+[main 09869ba] this-is-my-first-commiczxczxczxczxc
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\Jbt\Desktop\html-test-repository>git branch -m main
+
+C:\Users\Jbt\Desktop\html-test-repository>git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 302 bytes | 302.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/willibrown12/htm--text-repositary
+   63e6e7e..09869ba  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\Jbt\Desktop\html-test-repository>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
